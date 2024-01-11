@@ -13,7 +13,7 @@ public class Bai13 {
     }
     static void primeFactorization(int num) {
         if (num <= 1) {
-            System.out.println("Khong co dang luy thua");
+            System.out.println("So khong co dang luy thua");
             return;
         }
 

@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class Bai12 {
     public static int findFibonacci(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
+        if (n == 0||n == 1) {
             return 1;
         }
         return findFibonacci(n - 2) + findFibonacci(n - 1);
@@ -19,7 +16,9 @@ public class Bai12 {
             n = scanner.nextInt();
         }
         for (int i = 0; i < n; i++) {
-            System.out.print(Bai12.findFibonacci(i) + " ");
+            if(findFibonacci(i)>100)
+                break;
+            System.out.print(Bai12.findFibonacci(i)+" ");
         }
     }
 }
